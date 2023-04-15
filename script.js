@@ -14,12 +14,13 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
   var confPrompts = usrPrompts();
+  var passwordText = document.querySelector("#password");
 
   if (confPrompts) {
     var password = generatePassword();
-    var passwordText = document.querySelector("#password");
     passwordText.value = password;
-
+  } else {
+    passwordText.value = "";
   }
 
 }
@@ -33,13 +34,6 @@ function generatePassword() {
     password = password + choice[randomCharacter];
   }
   return password;
-
-
-
-
-
-
-
 }
 
 function usrPrompts() {
