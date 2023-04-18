@@ -47,16 +47,16 @@ function usrPrompts() {
   }
 
   if (confirm("Lowercase?")) {
-    choice = choice.concat(alphaLower);
+    choice = choice.concat(alphaLower); // confirm alert message prompts user if they want lowercase letters. on clicking confirm it concatenates a random lowercase letter to the choice.
   }
   if (confirm("Uppercase?")) {
-    choice = choice.concat(alphaUpper);
+    choice = choice.concat(alphaUpper); // confirm alert message prompts user if they want uppercase letters. on clicking confirm it concatenates a random uppercase letter to the choice.
   }
   if (confirm("Special Characters?")) {
-    choice = choice.concat(character);
+    choice = choice.concat(character); // confirm alert message prompts user if they want special characters. on clicking confirm it concatenates a random character to the choice.
   }
   if (confirm("Numbers?")) {
-    choice = choice.concat(number);
+    choice = choice.concat(number); // confirm alert message prompts user if they want numbers. on clicking confrim it concatenates a random number to the choice.
   }
   return true;
 }
