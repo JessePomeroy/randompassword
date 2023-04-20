@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
 let characterLength = 8;
 let choice = [];
@@ -30,7 +30,7 @@ function generatePassword() {
 
   var password = "";
   for (var i = 0; i < characterLength; i++) {
-    var randomCharacter = Math.floor(Math.random() * choice.length); // found the random integer method on MDN at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    let randomCharacter = Math.floor(Math.random() * choice.length); // found the random integer method on MDN at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
     password = password + choice[randomCharacter];
   }
   return password;
